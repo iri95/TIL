@@ -1,6 +1,4 @@
-# 첫 Gitgub
-
----
+# GitHub Intro
 
 ## readme 생성
 
