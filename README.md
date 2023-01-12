@@ -4,6 +4,6 @@
 
 - git 초기화
 
-- repository 생성
+- git repository 생성
 
 
