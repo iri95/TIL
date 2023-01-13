@@ -29,7 +29,7 @@
 - 무한한 확장성
   
   - SSAFY에서 사용하게 될 python, html, css, javascript를 모두 다룰 수 있음<img title="" src="Chatbot/2023-01-12-17-36-06-image.png" alt="" data-align="inline">
-
+  
   ![](Chatbot/2023-01-12-17-36-29-image.png)
 
 ### python의 문법
