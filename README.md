@@ -6,8 +6,4 @@
 
 - git repository 생성
 
-
-
 ## 새로운 수정 사항
-
-
