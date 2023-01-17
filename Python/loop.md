@@ -306,10 +306,37 @@ for idx, number in enumerate(members):
   # b!
   ```
 
-> 
-> 
+
+
 > **pass**
 
 - 아무것도 하지 않음(문법적으로 필요하지만, 할 일이 없을 때 사용)
 - 반복문 아니어도 사용가능
 - 예시
+  
+  ```python
+  # pass 사용
+  for i in range(4) :
+      if i == 2 :
+          pass
+      print(i)
+  '''
+  0
+  1
+  2
+  3
+  '''
+  ```
+  
+  ```python
+  # continue 사용
+  for i in range(4) :
+      if i == 2 :
+          continue
+      print(i)
+  '''
+  0
+  1
+  3
+  '''
+  ```
