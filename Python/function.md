@@ -19,6 +19,8 @@
 - 사용자 정의 함수
   - 직접 사용자가 만드는 함수
 
+
+
 > **함수의 정의**
 
 - 함수(Function)
@@ -31,6 +33,8 @@ def function_name(parameter):
     return returning_value
 ```
 
+
+
 > **함수 기본 구조**
 
 - 선언과 호출(define & call)
@@ -38,6 +42,8 @@ def function_name(parameter):
 - 문서화(Docstring)
 - 범위(Scope)
 - 결과값(Output)
+
+
 
 > **선언과 호출(define & call)**
 
@@ -68,6 +74,8 @@ def function_name(parameter):
   add(2,3)
   ```
 
+# 
+
 # 함수의 결과값(Output)
 
 > **값에 따른 함수의 종류**
@@ -78,12 +86,16 @@ def function_name(parameter):
   - 함수 실행 후, return문을 통해 값 반환
   - return을 하게 되면, 값 반환 후 함수가 바로 종료
 
+
+
 > **주의 - print vs return**
 
 - print 함수와 return 함수의 차이점
   - print를 사용하면 호출될 때마다 값이 출력됨(주로 테스트를 위해 사용)
   - 데이터 처리를 위해서는 return 사용
 - REPL(Read-Eval-Print Loop)환경에서는 마지막으로 작성된 코드의 리턴 값을 보여주므로 같은 동작을 하는 것으로 착각할 수 있음
+
+
 
 > **튜플을 활용하여 두 개 이상의 값 반환**
 
@@ -95,6 +107,8 @@ y = minus_and_product(4,5)
 print(y) # (-1,20)
 print(type(y)) # <class 'tuple'>
 ```
+
+
 
 > **함수 반환 정리**
 
@@ -118,6 +132,8 @@ print(type(y)) # <class 'tuple'>
     #['우영우','기러기','별똥별']
     ```
 
+# 
+
 # 함수의 입력(Input)
 
 > **parameter 와 Argument**
@@ -125,12 +141,16 @@ print(type(y)) # <class 'tuple'>
 - parameter : 함수를 정의할 때, 함수 내부에서 사용되는 변수
 - Argument : 함수를 호출 할 때, 넣어주는 값
 
+
+
 > **Argument**
 
 - 함수 호출 시 함수의 parameter를 통해 전달되는 값
 - Argument는 소괄호 안해 할당 func_name(argument)
   - 필수 Argument : 반ㄷ시 전달되어야 하는 argument
   - 선택 Argument : 값을 전달하지 않아도 되는 경우는 기본값이 전달
+
+
 
 > **Positional Arguments**
 
@@ -142,6 +162,8 @@ def add(x,y):
 
 add(2,3) # x = 2, y = 3
 ```
+
+
 
 > **Keyword Arguments**
 
@@ -157,6 +179,8 @@ add(2, y=5)
 add(x=2, 5)  # -> error 발생
 ```
 
+
+
 > **Default Arguments Values**
 
 - 기본값을 지정하여 함수 호출 시 argument 값을 설정하지 않도록 함
@@ -168,6 +192,8 @@ def add(x, y=0):
 
 add(2) # x = 2,. y = 0
 ```
+
+# 
 
 # Python의 범위(Scope)
 
@@ -198,6 +224,8 @@ add(2) # x = 2,. y = 0
   
   - **global** variable : global scope에 정의된 변수
   - **local** variable : local scope에 정의된 변수
+
+
 
 > **변수 수명 주기(lifecycle)**
 
@@ -271,6 +299,8 @@ add(2) # x = 2,. y = 0
   
   - 이름만 저장한 것 my_list[1]은 다름
 
+
+
 > **이름 검색 규칙(Name Resolution)**
 
 - 파이썬에서 사용되는 이름(식별자)들은 이름공간(navespace)에 저장되어 있음
@@ -280,6 +310,8 @@ add(2) # x = 2,. y = 0
   - **Global** scope : 최상단에 위치한 범위
   - **Built-in** scope : 모든 것을 담고 있는 범위(정의하지 않고 사용할 수 있는 모든 것)
 - 함수 내에서는 바깥 Scope의 변수에 접근 가능하나 수정은 할 수 없음 ⇒ global문을 사용!
+
+
 
 > **global문**
 
@@ -306,6 +338,8 @@ add(2) # x = 2,. y = 0
   # 2
   # 3
   ```
+
+
 
 > **nonlocal**
 
@@ -335,6 +369,8 @@ add(2) # x = 2,. y = 0
   # 20 
   # Error
   ```
+
+
 
 > **함수의 범위 주의**
 
