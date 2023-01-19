@@ -3,7 +3,9 @@
 - 순차, 선택, 반복
 - 파이썬은 기본적으로 위에서부터 아래로 차례대로 명령을 수행
 - 특정 상황에 따라 코드를 선택적으로 실행(분기/조건)하거나 계속하여 실험(반복)하는 제어가 필요함
-- 제어문은 순서도(flowchart)로 표현이 가능</br>
+- 제어문은 순서도(flowchart)로 표현이 가능
+  
+  </br>
 
 # 코드 스타일 가이드
 
@@ -15,7 +17,7 @@
 
 - 각 회사, 프로젝트마다 따로 스타일 가이드를 설정하기도 함
   
-  - [Google Style guide](https://google.github.io/styleguide/pyguide.html)</br>
+  - [Google Style guide](https://google.github.io/styleguide/pyguide.html)
 
 - Space Sensitive
   
@@ -24,12 +26,16 @@
     - 주의! 한 코드 안에서는 반드시 한 종류의 들여쓰기를 사용 → 혼용 금지
   - Tab으로 들여쓰면 계속 탭으로 들여써야 함
   - 원칙적으로는 공백(빈칸, space)사용을 권장 PEP8
+    
+    </br>
 
 # 조건문
 
 ## 조건문 기본
 
 - 조건문은 참/거짓을 판단할 수 있는 조건식과 함께 사용
+  
+  </br>
 
 > **기본 형식**
 
@@ -46,7 +52,7 @@
       # Run this Code block(False)
   ```
 
-## 
+</br> 
 
 ## 복수 조건문
 
@@ -63,7 +69,7 @@ else :
     # Code block
 ```
 
-## 
+</br> 
 
 ## 중첩 조건문
 
@@ -79,7 +85,7 @@ else :
     # Code block
 ```
 
-## 
+</br> 
 
 ## 조건 표현식(Conditional Expression)
 
@@ -87,10 +93,10 @@ else :
 - 삼항 연산자(Ternary Operator)로 부르기도 함
 
 ```python
-True인 경우 값 if 조건 else False인 경우 값
+True인 경우 값 if 조건 else False인 경우 값  
 ```
 
-# 
+</br>
 
 # 반복문
 
@@ -110,7 +116,7 @@ True인 경우 값 if 조건 else False인 경우 값
 - **반복 제어**
   - break, continue, for-else
 
-## 
+</br> 
 
 ## while문
 
@@ -125,6 +131,8 @@ True인 경우 값 if 조건 else False인 경우 값
       # Code block
   ```
 
+</br>
+
 > **복합연산자(In-Place Operator)**
 
 - 복합 연산자는 연산과 할당을 합쳐 놓은 것
@@ -138,7 +146,7 @@ while a < 5 :   -> 종료 조건
 print('끝')
 ```
 
-## 
+</br> 
 
 ## for 문
 
@@ -156,12 +164,16 @@ print('끝')
       # Code block
   ```
 
+</br>
+
 > **딕셔너리(Dictionary) 순회**
 
 - 추가 메서드를 활용하여 순회할 수 있음
   - keys() : Key로 구성된 결과
   - values() : value로 구성된 결과
   - items() : (key,value)의 튜플로 구성된 결과
+    
+    </br>
 
 > **enumerate 순회**
 
@@ -181,6 +193,8 @@ for idx, number in enumerate(members):
 '''
 ```
 
+</br>
+
 > **List Comprehension**
 
 - 표현식과 제어문을 통해 특정한 값을 가진 리스트를 간결하게 생성하는 방법
@@ -197,6 +211,8 @@ for idx, number in enumerate(members):
   cubic_list = [number ** 3 for number in range(1, 4)]
   print(cubic_list)
   ```
+
+</br>
 
 > **Dictionary Comprehension**
 
@@ -215,7 +231,7 @@ for idx, number in enumerate(members):
   print(cubic_dict)
   ```
 
-## 
+</br> 
 
 ## 반복문 제어
 
@@ -238,6 +254,8 @@ for idx, number in enumerate(members):
   '''
   ```
 
+</br>
+
 > **continue**
 
 - continue 이후의 코드 블록은 수행하지 않고, 다음 반복을 수행
@@ -255,6 +273,8 @@ for idx, number in enumerate(members):
   5
   '''
   ```
+
+</br>
 
 > **for-else**
 
@@ -283,6 +303,8 @@ for idx, number in enumerate(members):
       print('b가 없습니다')
   # b!
   ```
+
+</br>
 
 > **pass**
 
