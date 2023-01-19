@@ -15,8 +15,7 @@
 
 - 각 회사, 프로젝트마다 따로 스타일 가이드를 설정하기도 함
   
-  - [Google Style guide](https://google.github.io/styleguide/pyguide.html)
-  - </br>
+  - [Google Style guide](https://google.github.io/styleguide/pyguide.html)</br>
 
 - Space Sensitive
   
