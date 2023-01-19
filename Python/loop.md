@@ -3,9 +3,7 @@
 - 순차, 선택, 반복
 - 파이썬은 기본적으로 위에서부터 아래로 차례대로 명령을 수행
 - 특정 상황에 따라 코드를 선택적으로 실행(분기/조건)하거나 계속하여 실험(반복)하는 제어가 필요함
-- 제어문은 순서도(flowchart)로 표현이 가능
-  
-  
+- 제어문은 순서도(flowchart)로 표현이 가능</br>
 
 # 코드 스타일 가이드
 
@@ -26,16 +24,12 @@
     - 주의! 한 코드 안에서는 반드시 한 종류의 들여쓰기를 사용 → 혼용 금지
   - Tab으로 들여쓰면 계속 탭으로 들여써야 함
   - 원칙적으로는 공백(빈칸, space)사용을 권장 PEP8
-    
-    
 
 # 조건문
 
 ## 조건문 기본
 
 - 조건문은 참/거짓을 판단할 수 있는 조건식과 함께 사용
-  
-  
 
 > **기본 형식**
 
@@ -101,8 +95,6 @@ True인 경우 값 if 조건 else False인 경우 값
 # 반복문
 
 - 특정 조건을 만족할 때까지 같은 동작을 계속 반복하고 싶을 때 사용
-  
-  
 
 > 반복문의 종류
 
@@ -132,8 +124,6 @@ True인 경우 값 if 조건 else False인 경우 값
   while 조건 :
       # Code block
   ```
-
-
 
 > **복합연산자(In-Place Operator)**
 
@@ -166,16 +156,12 @@ print('끝')
       # Code block
   ```
 
-
-
 > **딕셔너리(Dictionary) 순회**
 
 - 추가 메서드를 활용하여 순회할 수 있음
   - keys() : Key로 구성된 결과
   - values() : value로 구성된 결과
   - items() : (key,value)의 튜플로 구성된 결과
-
-
 
 > **enumerate 순회**
 
@@ -195,8 +181,6 @@ for idx, number in enumerate(members):
 '''
 ```
 
-
-
 > **List Comprehension**
 
 - 표현식과 제어문을 통해 특정한 값을 가진 리스트를 간결하게 생성하는 방법
@@ -213,8 +197,6 @@ for idx, number in enumerate(members):
   cubic_list = [number ** 3 for number in range(1, 4)]
   print(cubic_list)
   ```
-
-
 
 > **Dictionary Comprehension**
 
@@ -256,8 +238,6 @@ for idx, number in enumerate(members):
   '''
   ```
 
-
-
 > **continue**
 
 - continue 이후의 코드 블록은 수행하지 않고, 다음 반복을 수행
@@ -275,8 +255,6 @@ for idx, number in enumerate(members):
   5
   '''
   ```
-
-
 
 > **for-else**
 
@@ -306,12 +284,12 @@ for idx, number in enumerate(members):
   # b!
   ```
 
-
-
 > **pass**
 
 - 아무것도 하지 않음(문법적으로 필요하지만, 할 일이 없을 때 사용)
+
 - 반복문 아니어도 사용가능
+
 - 예시
   
   ```python
