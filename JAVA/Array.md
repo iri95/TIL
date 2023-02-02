@@ -96,14 +96,21 @@ points = new int[] {1, 3, 5, 6, 8}; // 선언할 때는 배열의 크기를 알 
 > **배열의 생성과 메모리 사용 과정**
 
 - int[] points = new int[3]
+
 - 배열 선언 int[] points
+
 - 배열 생성 : new int[3];
+  
   - 메모리에 연속된 공간 차지 → 크기 변경 불가
     - int 타입의 데이터 3개를 담을 수 있는 메모리 공간 확보
   - Type에 대한 default 초기화
+
 - 참조 값 할당 : points = new int[3];
+  
   - 배열의 주소를 변수에 할당하여 참조하게 함
+
 - 요소값에 할당 :
+  
   - points[0] = 1;
   - points[1] = ‘A’
   
@@ -147,3 +154,46 @@ nums[1] = 100;
 
 - System.arrayCopy
 - Arrays.copyOf
+
+<br>
+
+> **2차원 Array 만들기 1**
+
+- int Type 기준으로 4*3 배열(Array) 만들기
+- 선언
+  - int[][] intArray;
+  - int intArray[][];
+  - int[] intArray[];
+- 생성
+  - intArray = new int[4][3];
+- 값 할당
+  - intArray[0][2] = 3;
+
+<br>
+
+> **2차원 Array 만들기 2**
+
+- int Type 기준으로 4*3배열(Array) 과 값을 동시에 만들기
+- {}안에 ,와 {}을 이용해서 선언과 동시에 값을 할당
+
+```java
+int[][] intArray = {{0, 1, 2}, {0, 1, 2}, {0, 1, 2}, {0, 1, 2}}
+```
+
+<br>
+
+> **2차원 Array 만들기 3**
+
+- int Type 기준으로 4*? 배열 (Array) 만들기
+
+```java
+int[][] intArray = new int[4][]; // int intArray[][], int[] intArray[]
+```
+
+- 1차 Arrya 만 생성 후, 필요에 따라 2차 배열을 생성함
+
+```java
+intArray[0] = new int[3];
+intArray[1] = new int[2];
+intArray[2] = {1, 2, 3}; // 이건 안됨, 선언과 생성이 분리
+```
